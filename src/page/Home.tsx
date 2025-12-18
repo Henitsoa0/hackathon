@@ -1,41 +1,29 @@
 import React from "react";
 import "./Home.css";
+import Nav from "../components/Nav";
 
 const Home: React.FC = () => {
   return (
-    <>
-      <nav className="nav">
-        <div className="wrap">
-          <a className="brand" href="#">
-            <img src="/mo.jpg" alt="Logo" />
-            <span>GEOMETRIC</span>
-          </a>
+    <div className="home-container">
+      <Nav />
 
-          <ul className="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-
-          <div className="actions">
-            <a className="btn" href="#">LOG IN</a>
-            <a className="btn accent" href="#">SIGN UP</a>
-          </div>
-        </div>
-      </nav>
-
+      {/* Hero Section */}
       <main className="hero">
-        <div>
+        <div className="hero-content">
+          <div className="kicker">Landing Page</div>
           <h1 className="title">GEOMETRIC BACKGROUND</h1>
           <p className="subtitle">
-            Une plateforme éducative moderne et immersive pour apprendre,
-            collaborer et évoluer ensemble.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Une landing page moderne,
+            élégante et immersive pour votre projet.
           </p>
+          <div className="hero-buttons">
+            <a href="#" className="btn accent">Get Started</a>
+            <a href="#" className="btn">Learn More</a>
+          </div>
         </div>
       </main>
-    </>
+
+    </div>
   );
 };
 

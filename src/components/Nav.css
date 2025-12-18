@@ -1,0 +1,85 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffd3a3;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.btn.accent {
+  background: linear-gradient(90deg, #ff6aa6, #ff9f4d);
+  border: none;
+  color: #1a0f2f;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
